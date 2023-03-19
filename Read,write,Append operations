@@ -1,0 +1,22 @@
+      #Read operation-to read the data which we have provided.
+      
+#lord vishnu
+#light is an form of enrgy
+#rama-sita
+#Narayana
+
+with open("a.txt","r") as file:
+  print(file.read())      
+  myfile.close()
+     #Write operation-for writing the data we use write operation.once the data if we close the data will be removed.
+myfile=open("file2.txt","w")
+myfile.write("Lord Venkatesha \n")
+    #Append operation-it is used for both write and read.here once you close the data and you have new data eventhough the previous data which have written should not be lost.
+myfile=open("file2.txt","a")
+myfile.write("believe it")
+   #for multiple data
+data=["raghav985","sharingun","russingun","ninetailfox"]
+with open("a.txt","a") as file:
+  file.writelines(data)
+  with open("a.txt","r") as file:
+  print(file.read())
